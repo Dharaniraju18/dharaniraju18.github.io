@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dharani Raju | Full-Stack Developer</title>
+  <meta name="description" content="Portfolio of Dharani Raju – Full-Stack Developer">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: #f8fafc;
+      color: #1f2937;
+      line-height: 1.7;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    section { padding: 70px 8%; }
+
+    h2 {
+      font-size: 2.1rem;
+      margin-bottom: 22px;
+      color: #111827;
+    }
+
+    p { color: #4b5563; }
+
+    /* NAVBAR */
+    header {
+      position: sticky;
+      top: 0;
+      background: #ffffff;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.05);
+      z-index: 100;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 8%;
+    }
+
+    .logo {
+      font-weight: 600;
+      font-size: 1.3rem;
+      color: #2563eb;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+    }
+
+    .nav-links a:hover { color: #2563eb; }
+
+    /* HERO */
+    .hero {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      color: #111827;
+    }
+
+    .hero h3 {
+      margin: 12px 0;
+      font-weight: 500;
+      color: #2563eb;
+    }
+
+    .hero-buttons {
+      margin-top: 20px;
+      display: flex;
+      gap: 15px;
+    }
+
+    .btn {
+      padding: 12px 22px;
+      border-radius: 25px;
+      background: #2563eb;
+      color: white;
+      font-size: 0.95rem;
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 1px solid #2563eb;
+      color: #2563eb;
+    }
+
+    .hero img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+    }
+
+    /* CARDS */
+    .card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+      transition: transform .25s;
+    }
+
+    .card:hover { transform: translateY(-4px); }
+
+    /* ABOUT */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    /* SKILLS */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+      gap: 20px;
+    }
+
+    /* PROJECTS */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+      gap: 25px;
+    }
+
+    .project-tags span {
+      background: #e0e7ff;
+      color: #1e40af;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      margin-right: 6px;
+    }
+
+    /* EXPERIENCE */
+    .experience-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+      gap: 25px;
+    }
+
+    /* CONTACT */
+    .contact-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .contact-links a {
+      background: #2563eb;
+      color: white;
+      padding: 12px 18px;
+      border-radius: 25px;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #111827;
+      color: #e5e7eb;
+      font-size: 0.9rem;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <div class="logo">Dharani Raju</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div>
+    <h1>Dharani Raju</h1>
+    <h3>Full-Stack Developer | AI & Data Science Student</h3>
+    <p>
+      I am a third-year engineering student passionate about building clean,
+      scalable web applications. I enjoy solving real-world problems by
+      combining intuitive user interfaces with strong backend logic.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#projects" class="btn">View Projects</a>
+      <a href="resume.pdf" class="btn btn-outline">Download Resume</a>
+    </div>
+  </div>
+
+  <img src="profile.jpg" alt="Dharani Raju">
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <div class="about-grid">
+    <div class="card">
+      <p>
+        I am pursuing <strong>B.Tech in Artificial Intelligence & Data Science</strong>
+        at <strong>M Kumarasamy College of Engineering</strong>, with a CGPA of <strong>8.1</strong>.
+      </p>
+      <p style="margin-top:10px;">
+        My primary interest lies in full-stack web development, where I focus on
+        creating reliable, maintainable, and user-friendly applications.
+      </p>
+    </div>
+
+    <div class="card">
+      <p>
+        I have hands-on experience with HTML, CSS, JavaScript, Flask, and MySQL.
+        I enjoy understanding complete application workflows — from database
+        design to frontend interactions.
+      </p>
+      <p style="margin-top:10px;">
+        I am currently seeking internship opportunities to gain real-world
+        industry exposure and improve my development skills.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="card">Frontend<br><strong>HTML, CSS, JavaScript</strong></div>
+    <div class="card">Backend<br><strong>Flask</strong></div>
+    <div class="card">Database<br><strong>MySQL</strong></div>
+    <div class="card">Tools<br><strong>Git, GitHub</strong></div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+
+    <div class="card">
+      <h3>Medication Reminder System</h3>
+      <p>
+        A web application that allows users to manage medication schedules
+        and receive timely reminders.
+      </p>
+      <p><strong>Impact:</strong> Improved scheduling accuracy and user consistency.</p>
+      <div class="project-tags">
+        <span>Flask</span><span>MySQL</span><span>Web App</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Pet Care Management System</h3>
+      <p>
+        A system to manage pet profiles, care routines, and reminders in
+        a structured and user-friendly manner.
+      </p>
+      <p><strong>Impact:</strong> Simplified pet care organization.</p>
+      <div class="project-tags">
+        <span>HTML</span><span>CSS</span><span>Backend Logic</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="experience-grid">
+    <div class="card">
+      <h3>Virtual Intern</h3>
+      <p><strong>Infosys Springboard</strong></p>
+      <p>
+        Completed structured learning modules and practical tasks focused
+        on software development fundamentals.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Achievement</h3>
+      <p>
+        Published a research paper in an <strong>IEEE journal</strong>,
+        demonstrating research and technical documentation skills.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="contact-links">
+    <a href="mailto:dharanir.raju@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+    <a href="https://github.com/Dharaniraju18" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    <a href="https://www.linkedin.com/in/dharani-raju183/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+  </div>
+</section>
+
+<footer>
+  © 2026 Dharani Raju
+</footer>
+
+</body>
+</html>
